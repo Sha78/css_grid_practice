@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Practice Css Grid layouts">
+    <title>Grid Css Practice</title>
+</head>
+<style>
+.wrapper{
+    display:grid;
+    grid-template-areas: 
+    'A A A A A A'
+    'B B B C C C'
+    'D D D D D D'
+    'E E E E E E';
+    grid-gap:8px;
+    background-color:rgb(82, 78, 78);  
+    border:8px solid #000000;
+}
+.wrapper > div{
+    background-color:#cfd9e0;
+    text-align:center;
+    height:20vh;
+    max-height: 100%;
+    overflow: hidden;
+}
+.one{grid-area:A;}
+.two{grid-area:B; }
+.three{grid-area:C;}
+.four{grid-area:D;}
+.five{grid-area:E;}
+
+header{
+    text-align:center;
+}
+p{
+    position: absolute;
+    padding:10px 10px;
+    
+    
+}
+
+</style>
+<body>
+    <header><h1>Grid CSS</h1></header>
+    <div class="wrapper">
+            <div class="one"><h2>Header</h2>
+                <p>Lorem ipsum dolor sit amet, pro ad cibo ocurreret, has ex ignota invidunt sensibus. Omnis regione instructior ea has. Etiam nihil postea an vim. Has an luptatum sapientem, est sale lorem et, nam ex invidunt similique. Lorem ipsum dolor sit amet, pro ad cibo ocurreret, has ex ignota invidunt sensibus. Omnis regione instructior ea has. Etiam nihil postea an vim. Has an luptatum sapientem, est sale lorem et, nam ex invidunt similique.
+                    </p>
+            </div>
+            <div class="two"><h2>Left Side</h2>
+                <p>Lorem ipsum dolor sit amet, pro ad cibo ocurreret, has ex ignota invidunt sensibus. 
+                    </p></div>
+            <div class="three"><h2>Right Side</h2>
+                <p>Lorem ipsum dolor sit amet, pro ad cibo ocurreret, has ex ignota invidunt sensibus. 
+                    </p>
+                </div>
+            <div class="four"><h2>Main</h2>
+                <p>Lorem ipsum dolor sit amet, pro ad cibo ocurreret, has ex ignota invidunt sensibus. Omnis regione instructior ea has. Etiam nihil postea an vim. Has an luptatum sapientem, est sale lorem et, nam ex invidunt similique. Lorem ipsum dolor sit amet, pro ad cibo ocurreret, has ex ignota invidunt sensibus. Omnis regione instructior ea has. Etiam nihil postea an vim. Has an luptatum sapientem, est sale lorem et, nam ex invidunt similique.
+                    </p></div>
+            <div class="five"><h2>Footer</h2>
+                <p>Lorem ipsum dolor sit amet, pro ad cibo ocurreret, has ex ignota invidunt sensibus. Omnis regione instructior ea has. Etiam nihil postea an vim. Has an luptatum sapientem, est sale lorem et, nam ex invidunt similique. Lorem ipsum dolor sit amet, pro ad cibo ocurreret, has ex ignota invidunt sensibus. Omnis regione instructior ea has. Etiam nihil postea an vim. Has an luptatum sapientem, est sale lorem et, nam ex invidunt similique.
+                    </p></div>
+    </div>
+    
+</body>
+</html>
